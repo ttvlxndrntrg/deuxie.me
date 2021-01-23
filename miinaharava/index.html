@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lautapeli</title>
+    <style>
+        #pelilauta{
+            width: 420px;
+            overflow: hidden;
+            background-color: teal;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #pelilauta div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            float: left;
+            cursor: pointer;
+        }
+        #pelilauta div img{
+            max-width: 100%;
+            overflow: hidden;
+
+        }
+        .klikattu{
+            background-color: green !important;
+            color: green !important;
+            overflow: hidden;
+        }
+        #pisteet{
+            background-color: black;
+            color: white;
+            width: 100px;
+            padding: 15px;
+            margin: auto;
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="pisteet">0</div>
+    <div id="pelilauta"></div>
+    <audio id="pommiAani">
+        <source src="explosion.mp3.wav" type="audio/mpeg">
+    </audio>
+    <audio id="aarreAani">
+        <source src="treasure.mp3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="beepAani">
+        <source src="beep.mp3.wav" type="audio/mpeg">
+    </audio>
+</body>
+<script src="js/script.js"></script>
+</html>
